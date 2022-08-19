@@ -1,0 +1,151 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 82px;
+}
+.header__wrapper {
+    width: 100%;
+    padding: 35px 68.65px 0 60.62px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__infoBlock {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+.logo {
+    z-index: 1000;
+    height: 56.073020935058594px;
+    width: 120.54487609863281px;
+    position: relative;
+    top: 5px;
+    background-image: url(../images/svg/Logo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu {
+    height: 19px;
+    position: relative;
+    top: -3px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu__item {
+    white-space: nowrap;
+    text-decoration: none;
+    font-family: "Cormorant Infant";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #195557;
+    &:hover {
+        border-bottom: 1px solid #195557;
+    }
+
+    &:first-child {
+        margin-right: 4.47916vw;
+    }
+    &:nth-child(2) {
+        margin-right: 4.6875vw;
+    }
+    &:nth-child(3) {
+        margin-right: 4.84375vw;
+    }
+    &:nth-child(4) {
+        margin-right: 6.875vw;
+    }
+}
+.icon__triangle {
+    display: inline-block;
+    background-image: url(../images/icons/triangle.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 8.33289623260498px;
+    width: 6.2497968673706055px;
+    padding-right: 9.75px;
+    box-sizing: content-box;
+}
+.phone {
+    margin-right: 4.16vw;
+    position: relative;
+    top: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.phone__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 69px;
+    height: 69px;
+    background: linear-gradient(1.36deg, #b0d3ce 12.29%, #ffedce 83.89%);
+    box-shadow: -4px -4px 20px #ffffff, 4px 4px 20px #cfd7d3;
+    border-radius: 40px;
+    margin-right: 1.0416vw;
+}
+.phone__icon {
+    height: 26.00283432006836px;
+    width: 26.013317108154297px;
+
+    background-image: url(../images/svg/phone.svg);
+    background-position: center;
+    background-size: cover;
+}
+.phone__number {
+    white-space: nowrap;
+    text-decoration: none;
+    font-family: "Raleway500";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    text-transform: uppercase;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #195557;
+}
+.basket {
+    position: relative;
+    text-decoration: none;
+    position: relative;
+    top: 3px;
+}
+.basket__image {
+    width: 36.42px;
+    height: 32.88px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../images/svg/basket.svg);
+}
+.goods {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -5px;
+    right: -8.5px;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background: #ffedcd;
+
+    font-family: "Raleway700";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+    font-feature-settings: "tnum" on, "lnum" on;
+}

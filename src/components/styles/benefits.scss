@@ -1,0 +1,79 @@
+.benefits {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.benefits__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+.benefits__ellipse {
+    width: 152px;
+    height: 152px;
+    left: 541px;
+    top: 752px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.benefits__icon {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hadghog__icon {
+    width: 62px;
+    height: 35px;
+
+    background-image: url(../images/icons/hedghog_icon.svg);
+}
+.syringe__icon {
+    height: 33.37731170654297px;
+    width: 34.905372619628906px;
+    background-image: url(../images/svg/syringe.svg);
+}
+.heart__icon {
+    height: 32.49882888793945px;
+    width: 36.277095794677734px;
+    background-image: url(../images/svg/heart.svg);
+}
+.benefits__ellipse_almond {
+    background: #ffedcd;
+    box-shadow: 4px 4px 20px #c2ccca, -8px -8px 20px #ffffff;
+}
+.benefits__ellipse_light_green {
+    background: #e2f0df;
+    box-shadow: 4px 4px 20px #c2ccca, -8px -8px 20px #ffffff;
+}
+.benefits__ellipse_green {
+    background: #70908b;
+    border: 1px solid #94afab;
+    box-shadow: 4px 4px 20px #c2ccca, -8px -8px 20px #ffffff;
+}
+.benefits__title {
+    font-family: "Cormorant Infant-700";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+
+    color: #195557;
+    margin-top: 30px;
+    margin-bottom: 8px;
+}
+.benefits__description {
+    font-family: "Raleway400";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+
+    color: #195557;
+    width: 114px;
+    height: 191px;
+}

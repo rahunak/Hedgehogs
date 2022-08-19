@@ -1,10 +1,30 @@
 @font-face {
-    font-family: "RobotoFlex";
+    font-family: "Cormorant Infant";
     font-style: normal;
-    src: url("../fonts/roboto-flex/RobotoFlex[GRAD\,XOPQ\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght].ttf") format("truetype");
+    src: url("../fonts/cormorant-infant-cufonfonts/CormorantInfant-Medium.ttf") format("truetype");
 }
 @font-face {
-    font-family: "Manrope";
+    font-family: "Cormorant Infant-700";
     font-style: normal;
-    src: url("../fonts/Manrope-Regular.ttf") format("truetype");
+    src: url("../fonts/cormorant-infant-cufonfonts/CormorantInfant-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Cormorant Infant-400";
+    font-style: normal;
+    src: url("../fonts/cormorant-infant-cufonfonts/CormorantInfant-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Raleway500";
+    font-style: normal;
+    src: url("../fonts/raleway/static/Raleway-Medium.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Raleway700";
+    font-style: normal;
+    src: url("../fonts/raleway/static/Raleway-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Raleway400";
+    font-style: normal;
+    src: url("../fonts/raleway/static/Raleway-Regular.ttf") format("truetype");
 }

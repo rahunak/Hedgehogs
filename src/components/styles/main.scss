@@ -1,0 +1,77 @@
+// .main {
+//     background-color: cadetblue;
+// }
+.main__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 202px;
+}
+.main__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main__title {
+    display: block;
+    height: 94.68px;
+}
+.main__description {
+    font-family: "Raleway400";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #70908b;
+}
+.main__title_svg {
+    width: 443.41px;
+    height: 94.68px;
+    background-image: url(../images/svg/HEDGEHOGS.svg);
+}
+.main__subtitle {
+    width: 566px;
+    height: 61px;
+    font-family: "Cormorant Infant-400";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 61px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    color: #70908b;
+    margin: 19.32px 0 18px 0;
+}
+.button__buy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 69px;
+    min-width: 328px;
+    padding: 1.5rem;
+    cursor: pointer;
+    background: #70908b;
+    box-shadow: 4px 4px 20px #c2ccca, -8px -8px 20px #ffffff;
+    border-radius: 40px;
+    font-family: "Raleway700";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+    color: #ffffff;
+    margin-top: 34px;
+    margin-bottom: 134px;
+    &:hover {
+        transition: all ease-in-out 400ms;
+        background: linear-gradient(90.14deg, #b0d3ce -2.41%, #ffedce 99.79%);
+        /* iso */
+        color: #195557;
+        box-shadow: 4px 4px 20px #c2ccca, -8px -8px 20px #ffffff;
+    }
+}
