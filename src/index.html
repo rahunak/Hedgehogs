@@ -5,11 +5,9 @@
 <body>
     <div class="background">
         <div class="background__container">
-            <img class="background__hedgehog_left" src="./components/images/images/hedgehog_left.png" alt="">
-            <img class="background__hedgehog_right" src="./components/images/images/hedgehog_right.png" alt="">
         </div>
-
-
+        <img class="background__hedgehog_left" src="./components/images/images/hedgehog_left.png" alt="">
+        <img class="background__hedgehog_right" src="./components/images/images/hedgehog_right.png" alt="">
         <div class="backgound__circle_left"></div>
         <div class="backgound__circle_right"></div>
     </div>
@@ -37,9 +35,22 @@
 
             <div id="header__infoBlock" class="header__infoBlock">
                 <div class="menu">
-                    <a href="#" class="menu__item">
+
+                    <!-- <a href="#" class="menu__item">
                         <span class="icon__triangle"></span>
-                        Каталог</a>
+                        Каталог
+                    </a> -->
+                    <div class="dropdown ">
+                        <button id="header__dropdown" class="dropdown__btn menu__item">
+                            <span id="icon__triangle" class="icon__triangle"></span>Каталог
+                        </button>
+                        <div id="myDropdown" class="dropdown__content">
+                            <a class="dropdown__item" href="#home">Ёжики</a>
+                            <a class="dropdown__item" href="#home">Питание</a>
+                            <a class="dropdown__item" href="#about">переноски</a>
+                            <a class="dropdown__item" href="#contact">Лекарства</a>
+                        </div>
+                    </div>
                     <a href="#" class="menu__item">о нас</a>
                     <a href="#" class="menu__item">контакты</a>
                     <a href="#" class="menu__item">галерея</a>
@@ -63,7 +74,7 @@
     <main class="main">
         <div class="main__container">
             <div class="main__content">
-                <h1 class="main__title_svg"></h1>
+                <h1 class="main__h1_svg"></h1>
                 <h2 class="main__subtitle">тоже любят молоко</h2>
                 <h3 class="main__description">Заведите себе ёжика. Он всегда выслушает, не будет мяукать в 5 утра и
                     царапать вашу мебель.</h3>

@@ -14,10 +14,7 @@
     justify-content: center;
     align-items: center;
 }
-.main__title {
-    display: block;
-    height: 94.68px;
-}
+
 .main__description {
     font-family: "Raleway400";
     font-style: normal;
@@ -27,10 +24,16 @@
 
     color: #70908b;
 }
-.main__title_svg {
+.main__h1_svg {
     width: 443.41px;
+    width: 23.09427vw;
+    min-width: 205.45px;
+    min-height: 44px;
     height: 94.68px;
     background-image: url(../images/svg/HEDGEHOGS.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 .main__subtitle {
     width: 566px;
@@ -67,11 +70,14 @@
     color: #ffffff;
     margin-top: 34px;
     margin-bottom: 134px;
+    transition: all ease-in-out 400ms;
     &:hover {
-        transition: all ease-in-out 400ms;
+        // transition: all ease-in-out 400ms;
         background: linear-gradient(90.14deg, #b0d3ce -2.41%, #ffedce 99.79%);
         /* iso */
         color: #195557;
         box-shadow: 4px 4px 20px #c2ccca, -8px -8px 20px #ffffff;
     }
+}
+@media (max-width: 991.98px) {
 }
