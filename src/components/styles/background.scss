@@ -1,16 +1,22 @@
 .background {
     width: 100%;
+    height: 100%;
     overflow: hidden;
     position: absolute;
+    left: 0;
+    top: 0;
     z-index: -20;
 }
 .background__container {
     position: relative;
-    background-image: url(../images/Subtract.png);
-    background-position: center;
+    background-image: url(../images/Subtract.svg);
+    background-position:0 0 ;
+    background-size: contain;
+    background-repeat: no-repeat;
     z-index: -20;
     width: 100%;
-    height: 992px;
+    height: 100%;
+    // height: 992px;
 }
 
 .background__hedgehog_left,
@@ -28,7 +34,7 @@
     right: -17px;
     bottom: -68px;
     z-index: 200;
-     z-index: -2;
+    z-index: -2;
 }
 .backgound__circle_left {
     background: radial-gradient(50% 50% at 50% 50%, rgba(180, 197, 194, 0.83) 0%, rgba(224, 225, 225, 0) 100%);
@@ -47,4 +53,29 @@
     top: -73px;
     border-radius: 0px;
     z-index: -15;
+}
+.backgound__circle_mobile {
+    display: none;
+}
+@media (max-width: 991.98px) {
+    .background__hedgehog_right {
+        //подбирал вручную параметры
+        height: 215px;
+        width: 284px;
+        top: 298px;
+        right: 0;
+    }
+    .backgound__circle_mobile {
+        position: absolute;
+        width: 1012px;
+        height: 1012px;
+        left: -139px;
+        top: -159px;
+        background: radial-gradient(50% 50% at 50% 50%, rgba(255, 238, 206, 0.49) 0%, rgba(196, 196, 196, 0) 100%);
+    }
+    .background__container {
+
+    background-size:auto 42% ;
+
+}
 }

@@ -1,0 +1,43 @@
+.other__wrapper {
+    padding-top: 61px;
+    padding-left: 21px;
+    padding-bottom: 53px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 27px;
+}
+
+.last__image {
+    height: 22px;
+    width: 37px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../images/icons/hedgehog__other_icon.svg);
+}
+.last__text {
+    width: 215px;
+    font-family: "Cormorant Infant-700";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #195557;
+    padding-top: 8px;
+}
+.promotion {
+    width: 191px;
+
+    font-family: "Raleway-400";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    font-feature-settings: "pnum" on, "lnum" on;
+
+    color: #195557;
+}
+.underline {
+    text-decoration: underline;
+}
