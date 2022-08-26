@@ -1,22 +1,38 @@
+.other {
+    height: 235px;
+}
 .other__wrapper {
     padding-top: 61px;
     padding-left: 21px;
     padding-bottom: 53px;
     display: flex;
     flex-direction: column;
-    row-gap: 27px;
+    justify-content: center;
+    align-items: center;
+    row-gap: 25px;
+    //last
+    position: relative;
+    left: -9px;
 }
-
+.last {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -3px;
+}
 .last__image {
     height: 22px;
     width: 37px;
+    position: relative;
+    top: 4px;
+    left: -9px;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url(../images/icons/hedgehog__other_icon.svg);
 }
 .last__text {
-    width: 215px;
     font-family: "Cormorant Infant-700";
     font-style: normal;
     font-weight: 700;
@@ -25,6 +41,7 @@
 
     color: #195557;
     padding-top: 8px;
+    padding-left: 3px;
 }
 .promotion {
     width: 191px;
@@ -37,7 +54,74 @@
     font-feature-settings: "pnum" on, "lnum" on;
 
     color: #195557;
+    text-align: center;
+    position: relative;
+    top: 6px;
+    left: -2px;
 }
 .underline {
     text-decoration: underline;
+}
+
+@media (max-width: 991.98px) {
+    .other{
+        min-height:   273px;
+    }
+    .last {
+       
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        left: 0;
+    }
+    .other__wrapper {
+        padding-top: 61px;
+        padding-left: 21px;
+        margin-bottom: 53px;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        row-gap: 27px;
+    }
+
+    .last__image {
+        left: 3px;
+        top: 0;
+        height: 22px;
+        width: 37px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(../images/icons/hedgehog__other_icon.svg);
+    }
+    .last__text {
+        width: 215px;
+        font-family: "Cormorant Infant-700";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        color: #195557;
+        padding-left: 0;
+        padding-top: 8px;
+    }
+    .promotion {
+        top: 0;
+        left: 0px;
+        width: 191px;
+
+        font-family: "Raleway-400";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        font-feature-settings: "pnum" on, "lnum" on;
+        text-align: left;
+        color: #195557;
+    }
+    .underline {
+        text-decoration: underline;
+    }
 }

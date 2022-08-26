@@ -10,14 +10,15 @@ document.querySelector('#header__dropdown').addEventListener('click', myFunction
 
 // Close the dropdown if the user clicks outside of it
 window.onclick = function (event) {
-    if (!event.target.matches('.dropdown__btn')) {
-        triangle.classList.toggle('rotate_90deg');
+    if (!event.target.matches('.dropdown__btn') && !event.target.matches('#icon__triangle')) {
         const dropdowns = document.getElementsByClassName('dropdown__content');
+
         let i;
         for (i = 0; i < dropdowns.length; i++) {
             const openDropdown = dropdowns[i];
             if (openDropdown.classList.contains('show')) {
                 openDropdown.classList.remove('show');
+                triangle.classList.remove('rotate_90deg');
             }
         }
     }
