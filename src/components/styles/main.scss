@@ -1,6 +1,5 @@
 .main {
     //  width: 320px; //-----------------
-
     width: 100%;
     display: flex;
     justify-content: center;
@@ -19,7 +18,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 134px;
+    //margin-bottom: 134px;
+    margin-bottom: 127px;
+    position: relative;
+    // left: 9px; //то надо то нет
 }
 
 .main__description {
@@ -27,7 +29,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 16.44px;
 
     color: #70908b;
 }
@@ -127,7 +129,7 @@
     }
 }
 @media (max-width: 991.98px) {
-    .main__content{
+    .main__content {
         margin-bottom: 0;
     }
 }

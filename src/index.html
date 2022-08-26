@@ -5,15 +5,15 @@
 </head>
 
 <body>
+
+
     <div class="background">
-        <div class="background__container">
-        </div>
-        <img class="background__hedgehog_left" src="./components/images/images/hedgehog_left.png" alt="">
-        <img class="background__hedgehog_right" src="./components/images/images/hedgehog_right.png" alt="">
         <div class="backgound__circle_left"></div>
         <div class="backgound__circle_right"></div>
         <div class="backgound__circle_mobile"></div>
-
+        <div class="background__container"></div>
+        <img class="background__hedgehog_left" src="./components/images/images/hedgehog_left.png" alt="">
+        <img class="background__hedgehog_right" src="./components/images/images/hedgehog_right.png" alt="">
     </div>
     <header class="header">
         <div class="header__wrapper">
@@ -75,7 +75,7 @@
             <div class="main__content">
                 <h1 class="main__h1_svg"></h1>
                 <h2 class="main__subtitle">тоже любят молоко</h2>
-                <h3 class="main__description">Заведите себе ёжика. Он всегда выслушает, не будет мяукать в 5 утра и
+                <h3 class="main__description">Заведите себе ёжика. Он всегда выслушает,не будет мяукать в 5 утра и
                     царапать вашу мебель.</h3>
                 <a href="#" class="button__buy">Купить ёжика</a>
             </div>
@@ -110,114 +110,122 @@
             </div>
     </main>
     <section class="tiles">
-        <div class="tile__item">
-            <div class="discount">-50 %</div>
-            <div class="info">
-                <div class="info__icon"></div>
-                <div class="syringe__block">
-                    <div class="syringe__icon"></div>
-                    <p class="syringe__status info_icon_text">привит</p>
-                </div>
-                <div class="likes__block">
-                    <div class="heart__icon"></div>
-                    <p class="likes__count info_icon_text">1235</p>
-                </div>
-            </div>
-            <div class="tile__content">
-                <div class="tile__content_block">
-                    <h2 class="tile__title">Ежик “Евгений”</h2>
-                    <p class="tile__description">
-                        Очень любит<br class="br" />сладости. Маленький<br class="br" /> сладкоежка=) Мы <br
-                            class="br" />называем его так<br class="br" /> между собой.<br class="br" /> Ручной,
-                        любит
-                        внимаение
-                    </p>
-                    <p class="tile__price_old">3 000 ₽</p>
-                    <p class="tile__price_current">1 500 ₽</p>
-                </div>
-                <div class="tile__hedgehog_image"></div>
-            </div>
-            <div class="tile__triangle">
-                <div class="tile__triangle_first"></div>
-                <a href="#" class="tile__triangle_second">
-                    <div class="tile__plus"></div>
-                </a>
-            </div>
+        <div class="tiles__slider">
+            <div class="arrow arrow_left"></div>
 
-        </div>
-        <div class="tile__item">
-            <div class="discount">-50 %</div>
-            <div class="info">
-                <div class="info__icon"></div>
-                <div class="syringe__block">
-                    <div class="syringe__icon"></div>
-                    <p class="syringe__status info_icon_text">привит</p>
-                </div>
-                <div class="likes__block">
-                    <div class="heart__icon"></div>
-                    <p class="likes__count info_icon_text">1235</p>
-                </div>
-            </div>
-            <div class="tile__content">
-                <div class="tile__content_block">
-                    <h2 class="tile__title">Ежик “Максим”</h2>
-                    <p class="tile__description">
-                        Немного игривый и задорный характер этого друга никого не оставит равнодушным!
-                    </p>
-                    <p class="tile__price_old">5 000 ₽</p>
-                    <p class="tile__price_current">2 500 ₽</p>
-                </div>
-                <div class="tile__hedgehog_image"></div>
-            </div>
-            <div class="tile__triangle">
-                <div class="tile__triangle_first"></div>
-                <a href="#" class="tile__triangle_second">
-                    <div class="tile__plus"></div>
-                </a>
-            </div>
+            <div class="tiles_items">
+                <div class="tile__item">
+                    <div class="discount">-50 %</div>
+                    <div class="info">
+                        <div class="info__icon"></div>
+                        <div class="syringe__block">
+                            <div class="syringe__icon"></div>
+                            <p class="syringe__status info_icon_text">привит</p>
+                        </div>
+                        <div class="likes__block">
+                            <div class="heart__icon"></div>
+                            <p class="likes__count info_icon_text">1235</p>
+                        </div>
+                    </div>
+                    <div class="tile__content">
+                        <div class="tile__content_block">
+                            <h2 class="tile__title">Ежик “Евгений”</h2>
+                            <p class="tile__description">
+                                Очень любит<br class="br" />сладости. Маленький<br class="br" /> сладкоежка=) Мы <br
+                                    class="br" />называем его так<br class="br" /> между собой.<br class="br" /> Ручной,
+                                любит
+                                внимаение
+                            </p>
+                            <p class="tile__price_old">3 000 ₽</p>
+                            <p class="tile__price_current">1 500 ₽</p>
+                        </div>
+                        <div class="tile__hedgehog_image"></div>
+                    </div>
+                    <div class="tile__triangle">
+                        <div class="tile__triangle_first"></div>
+                        <a href="#" class="tile__triangle_second">
+                            <div class="tile__plus"></div>
+                        </a>
+                    </div>
 
+                </div>
+                <div class="tile__item">
+                    <div class="discount">-50 %</div>
+                    <div class="info">
+                        <div class="info__icon"></div>
+                        <div class="syringe__block">
+                            <div class="syringe__icon"></div>
+                            <p class="syringe__status info_icon_text">привит</p>
+                        </div>
+                        <div class="likes__block">
+                            <div class="heart__icon"></div>
+                            <p class="likes__count info_icon_text">1235</p>
+                        </div>
+                    </div>
+                    <div class="tile__content">
+                        <div class="tile__content_block">
+                            <h2 class="tile__title">Ежик “Максим”</h2>
+                            <p class="tile__description">
+                                Немного игривый и задорный характер этого друга никого не оставит равнодушным!
+                            </p>
+                            <p class="tile__price_old">5 000 ₽</p>
+                            <p class="tile__price_current">2 500 ₽</p>
+                        </div>
+                        <div class="tile__hedgehog_image"></div>
+                    </div>
+                    <div class="tile__triangle">
+                        <div class="tile__triangle_first"></div>
+                        <a href="#" class="tile__triangle_second">
+                            <div class="tile__plus"></div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="arrow arrow_right"></div>
         </div>
     </section>
     <form action="" class="order">
-
-        <fieldset class="choiceForm">
+        <div class="order__wrapper">
             <legend class="order__title">Заполните заявку и мы забронируем для Вас нового друга</legend>
-            <div class="choiceForm__buttons">
-                <input class="order__input" type="checkbox" id="myself" name="myself" checked>
-                <label class="order__checkbox_button choiceForm__button" for="myself">хочу ёжика для себя</label>
-                <input class="order__input" type="checkbox" id="children" name="children">
-                <label class="order__checkbox_button choiceForm__button" for="children">хочу ёжика для детей</label>
-                <input class="order__input" type="checkbox" id="breeding" name="breeding">
-                <label class="order__checkbox_button choiceForm__button" for="breeding">хочу ёжика для
-                    разведения</label>
-            </div>
-        </fieldset>
-        <fieldset class="radioForm">
-            <div class="radioForm__item">
-                <input type="radio" id="contactChoice1" name="contact" value="1 or 2" checked>
-                <label class="radioForm__item__text" for="contactChoice1">Мне нужен 1-2 ёжика</label>
-            </div>
-            <div class="radioForm__item">
-                <input type="radio" id="contactChoice2" name="contact" value="3 or 4">
-                <label class="radioForm__item__text" for="contactChoice2">Мне нужен 3-4 ёжика</label>
-            </div>
-            <div class="radioForm__item">
-                <input type="radio" id="contactChoice3" name="contact" value="3 and more">
-                <label class="radioForm__item__text" for="contactChoice3">Мне нужны 3 и более ёжиков</label>
-            </div>
-            <div class="radioForm__item">
-                <input type="radio" id="contactChoice4" name="contact" value="don't need hadghog">
-                <label class="radioForm__item__text" for="contactChoice4">Пока присматриваюсь</label>
-            </div>
-        </fieldset>
-        <fieldset class="inputForm">
-            <input class="inputForm__input" type="text" placeholder="Ваше имя">
-            <input class="inputForm__input" type="text" placeholder="Ваш телефон">
-            <input class="inputForm__input" type="text" placeholder="Ваш e-mail">
-            <input class="inputForm__input" type="text" placeholder="Комментарий к заявке">
-        </fieldset>
+            <fieldset class="choiceForm">
+                <div class="choiceForm__buttons">
+                    <input class="order__input" type="checkbox" id="myself" name="myself" checked>
+                    <label class="order__checkbox_button choiceForm__button" for="myself">хочу ёжика для себя</label>
+                    <input class="order__input" type="checkbox" id="children" name="children">
+                    <label class="order__checkbox_button choiceForm__button" for="children">хочу ёжика для детей</label>
+                    <input class="order__input" type="checkbox" id="breeding" name="breeding">
+                    <label class="order__checkbox_button choiceForm__button" for="breeding">хочу ёжика для
+                        разведения</label>
+                </div>
+            </fieldset>
+            <fieldset class="radioForm">
+                <div class="radioForm__item">
+                    <input type="radio" id="contactChoice1" name="contact" value="1 or 2" checked>
+                    <label class="radioForm__item__text" for="contactChoice1">Мне нужен 1-2 ёжика</label>
+                </div>
+                <div class="radioForm__item">
+                    <input type="radio" id="contactChoice2" name="contact" value="3 or 4">
+                    <label class="radioForm__item__text" for="contactChoice2">Мне нужен 3-4 ёжика</label>
+                </div>
+                <div class="radioForm__item">
+                    <input type="radio" id="contactChoice3" name="contact" value="3 and more">
+                    <label class="radioForm__item__text" for="contactChoice3">Мне нужны 3 и более ёжиков</label>
+                </div>
+                <div class="radioForm__item">
+                    <input type="radio" id="contactChoice4" name="contact" value="don't need hadghog">
+                    <label class="radioForm__item__text" for="contactChoice4">Пока присматриваюсь</label>
+                </div>
+            </fieldset>
+            <fieldset class="inputForm">
+                <input class="inputForm__input" type="text" placeholder="Ваше имя">
+                <input class="inputForm__input" type="text" placeholder="Ваш телефон">
+                <input class="inputForm__input" type="text" placeholder="Ваш e-mail">
+                <input class="inputForm__input" type="text" placeholder="Комментарий к заявке">
+            </fieldset>
 
-        <input class=" button__buy order__submit" type="submit" value="Купить ёжика">
+            <input class=" button__buy order__submit" type="submit" value="Купить ёжика">
+        </div>
     </form>
     <div class="other">
         <div class="other__wrapper">
@@ -233,10 +241,11 @@
     </div>
 
 
-    <footer>
-        <div class="footer">
-            <div class="footer__wrapper">
-                <div class="logo logo_footer"></div>
+    <footer class="footer">
+
+        <div class="footer__wrapper">
+            <div class="logo logo_footer"></div>
+            <div class="footer__content">
                 <div class="menu">
                     <a href="#" class="menu__item text_white">Каталог</a>
                     <a href="#" class="menu__item text_white">о нас</a>
@@ -248,14 +257,21 @@
                     <div class="facebook social__icon"></div>
                     <div class="twitter social__icon"></div>
                 </div>
-                <div class="phone__number text_white">+7 (965) 569-89-98</div>
+                <div class="phone__number text_white">
+                    +7 (965) 569-89-98
+                </div>
             </div>
-            <div class="copyright">Все права защищены.<br class="br" />
-                Указанная стоимость товаров и условия их<br class="br" /> приобретения действительны на текущую дату.
-            </div>
+
+        </div>
+        <div class="copyright">Все права защищены.<br class="br" />
+            Указанная стоимость товаров и условия их<br class="br" /> приобретения действительны на текущую
+            дату.
         </div>
 
+
     </footer>
+
+
 </body>
 
 </html>

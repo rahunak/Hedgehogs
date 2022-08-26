@@ -2,23 +2,41 @@
     display: none;
 }
 .benefits {
-    // min-width: 260px;
-    // min-height: 427px;
+    // max-width: 45.52vw;
+    padding-top: 28px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    column-gap: 155px; 
     align-items: center;
-    align-items: stretch;
-    width: 45.7291vw;
-    position: relative;
-    left: 12px;
+
+    width: 45.52%;
+    margin-bottom: 56px;//last
 }
 .benefits__item {
     min-height: 176px;
+    height: 323px;
+    width: 191px;
+
+    border-radius: nullpx;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    &:nth-child(1) {
+        position: relative;
+        top: -4px;
+    }
+    &:nth-child(2) {
+        position: relative;
+        top: -27px;
+    }
+    &:nth-child(3) {
+        position: relative;
+        top: -4px;
+        left: 2px;
+    }
 }
 .benefits__ellipse {
     min-width: 92.24px;
@@ -40,6 +58,9 @@
     height: 35px;
 
     background-image: url(../images/icons/hedghog_icon.svg);
+    position: relative;
+    top: 3px;
+    left: 1px;
 }
 .syringe__icon {
     height: 33.37731170654297px;
@@ -50,6 +71,8 @@
     height: 32.49882888793945px;
     width: 36.277095794677734px;
     background-image: url(../images/svg/heart.svg);
+    position: relative;
+    top: 3px;
 }
 .benefits__ellipse_almond {
     background: #ffedcd;
@@ -86,24 +109,26 @@
 
     color: #195557;
     max-width: 182px;
-    height: 191px;
+    //height: 191px;
 }
+
+//----------------------------------------------------------
+
 @media (max-width: 991.98px) {
     .benefits {
-        // width: 260px;
-        // row-gap: 31px;
-
         padding-left: 5.68px;
         padding-top: 48px;
-        left: 0;
+        position: relative;
+        left: 1px;
+        top: 4px;
         width: 100%;
         flex-wrap: wrap-reverse;
+        justify-content: flex-start;
         // justify-content: space-between;
         row-gap: 29px;
         column-gap: 20px;
     }
     .benefits__item {
-        //height: 201px;
         height: 176px;
         flex-basis: 125px;
         justify-content: flex-start;
@@ -113,9 +138,14 @@
             order: 2;
             height: 181px;
         }
+        &:nth-child(2) {
+            top: -4px;
+        }
+        &:nth-child(3) {
+            left: 0;
+        }
         &:nth-child(3) .benefits__title {
             margin-bottom: 1px;
-
         }
     }
     .hadghog__icon {

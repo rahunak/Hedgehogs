@@ -1,17 +1,20 @@
 .footer {
+    position: relative;
+    height: 184px;
     display: flex;
     flex-direction: column;
     background-color: #70908b;
     & .menu {
+        width: 28.54166vw;
         height: auto;
         display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         row-gap: 30px;
         top: 0;
-        margin-top: 61.93px;
-        margin-bottom: 54px;
+        margin-top: 0;
+        margin-bottom: 0;
     }
     & .phone__number {
         display: block;
@@ -20,12 +23,8 @@
     & .menu__item {
         display: inline;
         margin: 0;
-        padding: 0;
-        &::after {
-            background-color: white;
-        }
-    }
-    & .menu__item {
+        padding: 3px;
+
         font-family: "Cormorant Infant-700";
         font-style: normal;
         font-weight: 700;
@@ -34,23 +33,39 @@
         text-transform: uppercase;
 
         color: #ffffff;
+        &::after {
+            background-color: white;
+        }
     }
 }
+.footer__wrapper {
+    position: relative;
+    padding: 0 60px;
+    padding-top: 49px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.footer__content {
+    width: 55.104166vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .text_white {
     color: white;
 }
-.footer__wrapper {
-    height: 100%;
-    position: relative;
-    padding-left: 20px;
-    padding-top: 35px;
-}
+
 .social {
-    position: absolute;
-    top: 46px;
-    right: 25px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 13px;
+    position: relative;
+    right: -13px;
 }
 .social__icon {
+    margin: 5px;
     height: 30px;
     width: 30px;
     background-position: center;
@@ -59,11 +74,9 @@
 }
 .instagram {
     background-image: url(../images/svg/instagram.svg);
-    margin-bottom: 22px;
 }
 .facebook {
     background-image: url(../images/svg/facebook.svg);
-    margin-bottom: 20px;
 }
 .twitter {
     background-image: url(../images/svg/twitter.svg);
@@ -74,22 +87,143 @@
     width: 120.54487609863281px;
     background-image: url(../images/svg/Logo_white.svg);
     left: 0;
+    top: 0;
 }
 .copyright {
-    width: 265px;
-
+    position: absolute;
+    bottom: 30px;
+    padding-left: 61px;
+    width: 456px;
+    height: 24px;
     font-family: "Raleway-400";
     font-style: normal;
     font-weight: 400;
-    font-size: 11px;
+    font-size: 9px;
     line-height: 131.4%;
-    /* or 14px */
+    /* or 12px */
 
     color: #ffffff;
-    margin-top: 34px;
-    margin-left: 20px;
-    margin-bottom: 36px;
-    & .br {
+    & .br:first-child {
         display: inline;
+    }
+}
+//------------------------------ mq --------------------------
+@media (max-width: 991.98px) {
+    .footer {
+        height: 510px;
+
+        display: flex;
+        flex-direction: column;
+        background-color: #70908b;
+        & .menu {
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            row-gap: 30px;
+            top: 0;
+            margin: 0;
+            margin-bottom: 54px;
+          
+        }
+        & .phone__number {
+            margin-bottom: 112px;
+            display: block;
+            margin-left: -1px;
+        }
+        & .menu__item {
+            display: inline;
+            margin: 0;
+            padding: 0;
+            &::after {
+                background-color: white;
+            }
+        }
+        & .menu__item {
+            font-family: "Cormorant Infant-700";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            text-transform: uppercase;
+
+            color: #ffffff;
+        }
+    }
+
+    .text_white {
+        color: white;
+    }
+    .footer__wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        height: 100%;
+        position: relative;
+        padding-left: 20px;
+        padding-top: 35px;
+    }
+    .footer__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .social {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+
+        position: absolute;
+        // top: 46px;
+        // right: 25px;// хз почему все сьехало
+       
+        top: 42px;
+        right: 19px;
+    }
+    .social__icon {
+        margin: 5px;
+        height: 30px;
+        width: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .instagram {
+        background-image: url(../images/svg/instagram.svg);
+    }
+    .facebook {
+        background-image: url(../images/svg/facebook.svg);
+    }
+    .twitter {
+        background-image: url(../images/svg/twitter.svg);
+    }
+
+    .logo_footer {
+        height: 56.073020935058594px;
+        width: 120.54487609863281px;
+        background-image: url(../images/svg/Logo_white.svg);
+        left: 0;
+    }
+    .copyright {
+        position: absolute;
+        bottom:  0;
+        left: 0;
+        height: auto;
+        width: auto;
+        font-family: "Raleway-400";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 131.4%;
+        /* or 14px */
+
+        color: #ffffff;
+
+        padding: 34px 35px 36px 20px;
+        & .br {
+            display: inline;
+        }
     }
 }
