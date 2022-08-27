@@ -65,12 +65,15 @@
 .syringe__icon {
     height: 33.37731170654297px;
     width: 34.905372619628906px;
-    background-image: url(../images/svg/syringe.svg);
+    // background-image: url(../images/svg/syringe.svg);
+    
+    fill:#195557
 }
 .heart__icon {
     height: 32.49882888793945px;
     width: 36.277095794677734px;
-    background-image: url(../images/svg/heart.svg);
+    //background-image: url(../images/svg/heart.svg);
+    fill:#195557;
     position: relative;
     top: 3px;
 }
