@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-x: hidden;
+    // overflow-x: hidden; то надо то нет
 }
 .tiles__slider {
     width: 1297px;
@@ -34,12 +34,9 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    // width: 100%;
     margin: 0 35px;
     margin-bottom: 54px;
     position: relative;
-    // top: -36px;
-    // left: 27px;
     column-gap: 39px;
 }
 .tile__triangle {
@@ -157,6 +154,7 @@
     top: -6px;
     left: 62px;
 }
+
 .info__icon {
     position: absolute;
     top: 19px;
@@ -164,10 +162,95 @@
     width: 37px;
     height: 37px;
     background-image: url(../images/icons/info__icon.svg);
+    cursor: pointer;
+    z-index: 300;
+    &:hover + .info_block {
+        background: #195557;
+
+        height: 4.114583vw;
+        width: 11.4583vw;
+        min-height: 79px;
+        min-width: 220px;
+        position: absolute;
+        right: -63px;
+        top: 72px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: 1000;
+        & .info_icon_text {
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+}
+.info {
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 .syringe__block,
 .likes__block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4px;
+
+    & .syringe__icon {
+        height: 9.222063064575195px;
+        width: 9.644259452819824px;
+        margin-right: 2px;
+        background-size: contain;
+        background-position: center;
+    }
+    & .heart__icon {
+        height: 8.127988815307617px;
+        width: 9.072938919067383px;
+        background-size: contain;
+        background-position: center;
+        position: relative;
+        left: -2px;
+        top: 0;
+    }
+}
+.info_block {
     display: none;
+    background: #195557;
+    & .syringe__icon {
+        height: 18.86543846130371px;
+        width: 19.729124069213867px;
+
+        fill: white;
+    }
+    & .heart__icon {
+        height: 16.627304077148438px;
+        width: 18.560375213623047px;
+        top: 0;
+        left: 0;
+        fill: white;
+    }
+}
+.info_block__triangle {
+    z-index: 1000;
+    width: 0;
+    height: 0;
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+    border-bottom: 9px solid #195557;
+    position: absolute;
+    top: -9px;
+    left: calc(50% - 14px);
+}
+
+.info_icon_text {
+    font-family: "Raleway-400";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 159.9%;
+    text-transform: lowercase;
+
+    color: #195557;
 }
 .tile__content {
     height: 100%;
@@ -310,7 +393,8 @@
         top: -5px;
         left: 30px;
     }
-    .info {
+
+    .info_block {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -319,6 +403,21 @@
         right: 19.7px;
         top: 12px;
         z-index: 50;
+        background-color: transparent;
+        & .info_block__triangle {
+            display: none;
+        }
+        & .text_white {
+            color: #195557;
+        }
+        & .syringe__icon {
+
+            fill: #195557;
+        }
+        & .heart__icon {
+
+            fill: #195557;
+        }
     }
     .info__icon {
         display: none;
@@ -347,16 +446,7 @@
             top: 0;
         }
     }
-    .info_icon_text {
-        font-family: "Raleway-400";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 10px;
-        line-height: 159.9%;
-        text-transform: lowercase;
 
-        color: #195557;
-    }
     .syringe__status {
         text-transform: lowercase;
     }
