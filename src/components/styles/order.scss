@@ -19,7 +19,8 @@
     background: #eaeeef;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
+    // row-gap: 20px;
     align-items: flex-start;
 }
 
@@ -35,7 +36,8 @@
     column-gap: 0.72916vw;
     justify-content: flex-start;
     align-items: center;
-    margin-right: 4vw;
+    align-self: flex-end;
+    //margin-right: 4vw;
 }
 .order__title {
     width: 62.34375vw;
@@ -60,7 +62,7 @@
     }
 }
 .order__checkbox_button {
-     white-space: nowrap;
+    white-space: nowrap;
     cursor: pointer;
     transition: all ease-in-out 400ms;
     height: 49px;
@@ -115,6 +117,7 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     row-gap: 14px;
+    margin-right: 60px;
 }
 .radioForm__item {
     display: flex;
@@ -130,13 +133,12 @@
         margin-right: 55px;
     }
     &:nth-child(3) {
-          margin-top: 3px;
+        margin-top: 3px;
         order: 2;
     }
     &:nth-child(4) {
         order: 4;
     }
-
 }
 .radioForm__item__text {
     font-family: "Cormorant Infant-700";
@@ -155,16 +157,19 @@
     justify-content: space-between;
     row-gap: 1.0416vw;
     margin-top: 43px;
+    // margin-top: 13px;
     margin-bottom: 25px;
+    flex-basis: 280px;
+    column-gap: 20px;
 }
 .inputForm__input {
-    min-width: 280px;
+   
+    flex-grow: 1;
     min-height: 62px;
-    width: 18.3vw;
-    height: 3.2291vw;
     background: #f8f8f8;
     border-radius: 8px;
     text-overflow: ellipsis;
+   
     &::placeholder {
         font-family: "Raleway-400";
         font-style: normal;
@@ -283,7 +288,6 @@
         }
     }
     .order__checkbox_button {
-       
         cursor: pointer;
         transition: all ease-in-out 400ms;
         height: 49px;
@@ -380,10 +384,9 @@
         row-gap: 10px;
         margin-bottom: 13px;
         margin-top: 3px;
+        flex-basis: 280px;
     }
     .inputForm__input {
-        width: 280px;
-        height: 62px;
         background: #f8f8f8;
         border-radius: 8px;
 
@@ -407,7 +410,7 @@
     .order__submit {
         min-height: 69px;
         min-width: 280px;
-        
+
         position: relative;
         left: -1px;
     }

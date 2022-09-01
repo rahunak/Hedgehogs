@@ -1,18 +1,20 @@
 .tiles {
     width: 100%;
-    position: relative;
-    top: -36px;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    // overflow-x: hidden; то надо то нет
 }
 .tiles__slider {
+    position: relative;
+    top: -55px;
+    // left: 8px;
     width: 1297px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    //
     //left: 8px; то надо то нет
 }
 .arrow {
@@ -20,8 +22,10 @@
     width: 24px;
     height: 24px;
     position: relative;
-    top: -26px;
+    top: -7px;
     cursor: pointer;
+    background-color: transparent;
+    z-index: 1000;
 }
 
 .arrow_left {
@@ -30,15 +34,67 @@
 .arrow_right {
     background-image: url(../images/svg/arrow_right.svg);
 }
-.tiles_items {
+.slider__wrapper {
+    // width: 61.66vw;
+    // height: 410px;
+    width: 1254px;
+    overflow: hidden;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 0 35px;
-    margin-bottom: 54px;
+    margin-bottom: 34px;
     position: relative;
     column-gap: 39px;
+    padding: 0 35px;
 }
+
+.tile__item {
+    position: relative;
+    min-width: 570px;
+    min-height: 318px;
+    box-shadow: 4px 4px 40px #f1f1f1;
+    border-radius: 20px;
+    // height: 397px;
+    // width: 570px;
+    flex: 0 0 570px;
+    margin: 20px 0 0 0;
+}
+.tile_item_2 {
+    box-shadow: 4px 4px 40px #f1f1f1;
+    border-radius: 20px;
+
+    & .discount {
+        position: absolute;
+        left: 59px;
+    }
+    & .tile__hedgehog_image {
+        min-width: 230px;
+        min-height: 166.5px;
+        height: 16.84109375vw;
+        width: 23.453125vw;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(../images/images/Hedgehog_Maxim.png);
+        right: -62px;
+    }
+    & .tile__price_old {
+        position: relative;
+        top: 7px;
+        left: 3px;
+    }
+    & .tile__price_current {
+        position: relative;
+        top: 11px;
+        left: 3px;
+    }
+    // &:nth-child(2) .tile__plus {
+    //     position: relative;
+    //     top: -7px;
+    //     left: 1px;
+    // }
+}
+
 .tile__triangle {
     position: absolute;
     right: 0;
@@ -47,7 +103,7 @@
 
     width: 104px;
     height: 104px;
-    overflow: hidden;
+    // overflow: hidden;
 }
 .tile__triangle_first {
     position: absolute;
@@ -55,9 +111,8 @@
     bottom: 0;
     width: 0;
     height: 0;
-    border-bottom: 82px solid #ffedcd;
-    border-left: 82px solid #ffedcd;
-    z-index: -5;
+    border-bottom: 82px solid transparent;
+    border-left: 82px solid transparent;
 }
 .tile__triangle_second {
     position: absolute;
@@ -68,10 +123,24 @@
     border-top: 82px solid transparent;
     border-right: 82px solid white;
 }
+.plus_wrapper {
+    cursor: pointer;
+    padding: 10px;
+    // width: 50px;
+    // height: 41px;
+    border-radius: 50%;
+    z-index: 1000;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .tile__plus {
-    position: relative;
-    right: -51px;
-    bottom: 26.6px;
+    // position: relative;
+    // right: -51px;
+    // bottom: 26.6px;
 
     background-image: url(../images/svg/plus.svg);
     background-size: contain;
@@ -81,53 +150,6 @@
     width: 26px;
 }
 
-.tile__item {
-    position: relative;
-    top: 1px;
-    min-width: 330.76px;
-    min-height: 318px;
-    box-shadow: 4px 4px 40px #f1f1f1;
-    border-radius: 20px;
-    width: 29.6875vw;
-    height: 397px;
-
-    &:nth-child(1) {
-        background-color: #ffedcd;
-    }
-    &:nth-child(2) {
-        background: #e2f0df;
-    }
-    &:nth-child(2) .discount {
-        position: absolute;
-        left: 59px;
-    }
-    &:nth-child(2) .tile__hedgehog_image {
-        min-width: 230px;
-        min-height: 166.5px;
-        height: 16.84109375vw;
-        width: 23.453125vw;
-
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-image: url(../images/images/Hedgehog_Maxim.png);
-        right: -62px;
-    }
-    &:nth-child(2) .tile__price_old {
-        position: relative;
-        top: 7px;
-        left: 3px;
-    }
-    &:nth-child(2) .tile__price_current {
-        position: relative;
-        top: 11px;
-        left: 3px;
-    }
-    &:nth-child(2) .tile__plus {
-        position: relative;
-        top: -33px;
-    }
-}
 .discount {
     width: 48px;
     height: 21px;
@@ -169,6 +191,7 @@
 
         height: 4.114583vw;
         width: 11.4583vw;
+
         min-height: 79px;
         min-width: 220px;
         position: absolute;
@@ -177,7 +200,7 @@
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        z-index: 1000;
+        z-index: 1001;
         & .info_icon_text {
             font-size: 14px;
             line-height: 22px;
@@ -262,11 +285,11 @@
     display: flex;
 }
 .tile__hedgehog_image {
-    position: absolute;
+    position: absolute; //
     bottom: -37px;
-    right: -39px;
+    right: -2vw;
     background-image: url(../images/images/Hedgehog_Eugene.png);
-
+    z-index: 1000;
     min-width: 177px;
     min-height: 129px;
 
@@ -275,6 +298,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     align-self: flex-end;
+    justify-content: flex-end;
     width: 22.36vw;
     height: 17.4140625vw;
 }
@@ -411,11 +435,9 @@
             color: #195557;
         }
         & .syringe__icon {
-
             fill: #195557;
         }
         & .heart__icon {
-
             fill: #195557;
         }
     }
@@ -473,7 +495,7 @@
 
         width: 104px;
         height: 104px;
-        overflow: hidden;
+        // overflow: hidden;
     }
     .tile__triangle_first {
         position: absolute;
@@ -481,9 +503,8 @@
         bottom: 0;
         width: 0;
         height: 0;
-        border-bottom: 52px solid #ffedcd;
-        border-left: 52px solid #ffedcd;
-        z-index: -5;
+        border-bottom: 52px solid transparent;
+        border-left: 52px solid transparent;
     }
     .tile__triangle_second {
         position: absolute;
@@ -494,18 +515,22 @@
         border-top: 52px solid transparent;
         border-right: 52px solid white;
     }
+    .plus_wrapper {
+        bottom: -10px;
+        right: -10px;
+    }
     .tile__plus {
-        position: absolute;
+        // position: relative;
         height: 24px;
         width: 24px;
-        right: -52px;
-        bottom: 0;
+        // right: -52px;
+        // bottom: 0;
         background-image: url(../images/svg/plus.svg);
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
     }
-    .tiles_items {
+    .slider__wrapper {
         margin: 0;
         column-gap: 5px;
     }

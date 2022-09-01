@@ -17,8 +17,9 @@
         margin-bottom: 0;
     }
     & .phone__number {
+        
         display: block;
-        margin-left: -1px;
+        // margin-left: 10px;
     }
     & .menu__item {
         display: inline;
@@ -47,10 +48,11 @@
     align-items: flex-end;
 }
 .footer__content {
-    width: 55.104166vw;
+     width: 55.104166vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
+  
 }
 
 .text_white {
@@ -61,8 +63,8 @@
     display: flex;
     flex-direction: row;
     column-gap: 13px;
-    position: relative;
-    right: -13px;
+    // position: relative;
+    // right: -13px;
 }
 .social__icon {
     margin: 5px;
