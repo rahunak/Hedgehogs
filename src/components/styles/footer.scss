@@ -1,5 +1,4 @@
 .footer {
-    
     position: relative;
     height: 184px;
     display: flex;
@@ -18,9 +17,8 @@
         margin-bottom: 0;
     }
     & .phone__number {
-        
         display: block;
-        // margin-left: 10px;
+        margin-left: 71px;
     }
     & .menu__item {
         display: inline;
@@ -49,11 +47,11 @@
     align-items: flex-end;
 }
 .footer__content {
-    //width: 55.104166vw;
+    width: 59vw;
     display: flex;
-    justify-content: space-between;
+
+    justify-content: flex-end;
     align-items: center;
-  
 }
 
 .text_white {
@@ -66,6 +64,7 @@
     column-gap: 13px;
     // position: relative;
     // right: -13px;
+    margin-left: 104px;
 }
 .social__icon {
     margin: 5px;
@@ -128,7 +127,6 @@
             top: 0;
             margin: 0;
             margin-bottom: 54px;
-          
         }
         & .phone__number {
             margin-bottom: 112px;
@@ -181,7 +179,7 @@
         position: absolute;
         // top: 46px;
         // right: 25px;// хз почему все сьехало
-       
+
         top: 42px;
         right: 19px;
     }
@@ -211,7 +209,7 @@
     }
     .copyright {
         position: absolute;
-        bottom:  0;
+        bottom: 0;
         left: 0;
         height: auto;
         width: auto;
