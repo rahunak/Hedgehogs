@@ -1,3 +1,5 @@
+import searchTiles from './press_plus';
+
 const leftArrow = document.querySelector('#slider__arrow_left');
 const rightArrow = document.querySelector('#slider__arrow_right');
 const sliderContainer = document.querySelector('#sliderContainer');
@@ -71,12 +73,16 @@ function slideElements(tiles, direction) {
         if (+direction === 0) {
             tiles[0].remove();
         }
+        leftArrow.disabled = false;
+        rightArrow.disabled = false;
     });
 }
 // Памятка:
 // event.target.dataset.directionToLeft === 1 (true)
 // event.target.dataset.directionToLeft === 0 (false)
 function addTile(event) {
+    leftArrow.disabled = true;
+    rightArrow.disabled = true;
     const tile = createTile();
     if (+event.target.dataset.directionToLeft === 0) {
         sliderContainer.append(tile);
@@ -85,6 +91,7 @@ function addTile(event) {
     }
     const tiles = document.querySelectorAll('.tile__item');
     slideElements(tiles, event.target.dataset.directionToLeft);
+    searchTiles();
 }
 
 leftArrow.addEventListener('click', addTile);

@@ -8,12 +8,12 @@
 .tiles__slider {
     position: relative;
     top: -55px;
-    // left: 8px;
-    width: 1297px;
+
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    overflow: hidden;
     //
     //left: 8px; то надо то нет
 }
@@ -35,26 +35,26 @@
     background-image: url(../images/svg/arrow_right.svg);
 }
 .slider__wrapper {
-    // width: 61.66vw;
+    width: 1177px;
     // height: 410px;
-    width: 1254px;
+    max-width: 1254px;
     overflow: hidden;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
-    margin-bottom: 34px;
+
     position: relative;
-    column-gap: 39px;
-    padding: 0 35px;
+    column-gap: 37px;
+    margin: 0 35px 0 34px;
 }
 
 .tile__item {
     position: relative;
-    min-width: 570px;
+
     min-height: 318px;
     box-shadow: 4px 4px 40px #f1f1f1;
     border-radius: 20px;
-    // height: 397px;
+    height: 397px;
     // width: 570px;
     flex: 0 0 570px;
     margin: 20px 0 0 0;
@@ -88,11 +88,6 @@
         top: 11px;
         left: 3px;
     }
-    // &:nth-child(2) .tile__plus {
-    //     position: relative;
-    //     top: -7px;
-    //     left: 1px;
-    // }
 }
 
 .tile__triangle {
@@ -188,14 +183,13 @@
     z-index: 300;
     &:hover + .info_block {
         background: #195557;
-
         height: 4.114583vw;
         width: 11.4583vw;
 
         min-height: 79px;
         min-width: 220px;
         position: absolute;
-        right: -63px;
+        right: 0;
         top: 72px;
         display: flex;
         justify-content: space-evenly;
@@ -262,7 +256,7 @@
     border-bottom: 9px solid #195557;
     position: absolute;
     top: -9px;
-    left: calc(50% - 14px);
+    left: calc(70% + 0.4vw);
 }
 
 .info_icon_text {
@@ -363,8 +357,8 @@
         align-items: flex-start;
         width: 100%;
         padding-top: 38px;
-        padding-bottom: 19px;
-        padding-left: 21px;
+        // padding-bottom: 19px;
+        // padding-left: 21px;
         overflow: hidden;
     }
     .tile__content {
@@ -375,19 +369,9 @@
         row-gap: 11px;
     }
     .tile__item {
-        min-width: auto;
-    }
-    .tile__item:first-child {
         height: 318px;
-        width: 243.75924682617188px;
-        position: relative;
-        margin-right: 34.24px;
+        flex-basis: 243.76px;
     }
-    .tile__item:nth-child(2) {
-        height: 318px;
-        width: 243.75924682617188px;
-    }
-
     .tile__title {
         height: 55px;
         width: 122px;
@@ -531,8 +515,9 @@
         background-repeat: no-repeat;
     }
     .slider__wrapper {
-        margin: 0;
-        column-gap: 5px;
+        padding: 0;
+        column-gap: 34.24px;
+        margin: 0 21px;
     }
     .arrow {
         display: none;

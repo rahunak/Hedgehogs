@@ -1,10 +1,11 @@
-.other {
-    height: 235px;
-}
+// .other {
+//     height: 235px;
+// }
 .other__wrapper {
-    padding-top: 61px;
+    padding-top: 95px;
     padding-left: 21px;
     padding-bottom: 53px;
+    margin-bottom: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -64,11 +65,10 @@
 }
 
 @media (max-width: 991.98px) {
-    .other{
-        min-height:   273px;
+    .other {
+        min-height: 273px;
     }
     .last {
-       
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
