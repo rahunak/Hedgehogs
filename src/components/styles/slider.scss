@@ -1,0 +1,39 @@
+.fromRight {
+    animation-name: slideFromRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+.fromLeft {
+    animation-name: slideFromLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes slideFromLeft {
+    from {
+        transform: translateX(calc(-100% - 39px));
+    }
+    to {
+        transform: translateX(calc(0));
+        transition: all ease-in-out 1s;
+    }
+}
+@keyframes slideFromRight {
+    from {
+        transform: translateX(calc(0));
+    }
+    to {
+        transform: translateX(calc(-100% - 39px));
+        transition: all ease-in-out 1s;
+    }
+}
+.background_70908b {
+    background-color: #70908b;
+}
+.background_ffedcd {
+    background-color: #ffedcd;
+}
+.background_e2f0df {
+    background-color: #e2f0df;
+}

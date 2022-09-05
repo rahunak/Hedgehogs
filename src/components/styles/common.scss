@@ -15,8 +15,8 @@ body {
 }
 html {
   font-size: 10px;
-
 }
+
 /* 1 – Изменим стили шрифтов */
 /* 2 – Удалим margin в Firefox и Safari */
 input[type="text"] {
@@ -25,19 +25,6 @@ input[type="text"] {
   line-height: inherit; /* 1 */
   margin: 0; /* 2 */
 }
-// .stop_scrolling {
-//   height: 100%;
-//   overflow: hidden;
-// }
-
-// @media (max-width: 1199.98px) {
-//     .menu__item:nth-child(n + 1) {
-//         margin-right: 1.5vw;
-//     }
-//     .phone {
-//         margin-right: 1.5vw;
-//     }
-//     .benefits{
-//       justify-content: center;
-//     }
-// }
+body{
+  overflow-x: hidden;
+}
